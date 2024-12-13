@@ -123,7 +123,6 @@ The Legal Case Retrieval System efficiently retrieves and summarizes legal cases
 1. u s ex rel mcintosh v price et al (Decision Date: 1901-09-19, Jurisdiction: Alaska)
 2. price et al v mcintosh et al (Decision Date: 1901-11-16, Jurisdiction: Alaska)
 
-
 ---
 
 ## Key Features
