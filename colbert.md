@@ -1,4 +1,4 @@
-# Legal Case Retrieval System: Workflow Documentation
+# Legal Case Retrieval System: Workflow Documentation on Colbert
 
 ## Overview
 The Legal Case Retrieval System efficiently retrieves and summarizes legal cases based on user queries. It supports multiple query types, including names, abbreviations, decision dates, jurisdictions, and custom legal queries. This document outlines the workflow implemented in the system, including the natural language processing (NLP) and language modeling (LM) techniques used.
