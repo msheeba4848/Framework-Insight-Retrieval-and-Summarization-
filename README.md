@@ -47,6 +47,16 @@ Framework-Insight-Retrieval-and-Summarization/
 ├── Forbes Screenshot.png                      # Supporting screenshot
 
 ```
+----
+
+## Usage
+
+1. To run ColBERT:
+   `colbert.ipynb`
+2. To run FAISS
+   `faiss.ipynb`
+
+---
 
 ## Features
 
@@ -96,6 +106,31 @@ Framework-Insight-Retrieval-and-Summarization/
 
 ---
 
+## Key Components 
+
+## Retrieval Techniques
+
+- **ColBERT**: Employs token-level embeddings for fine-grained matching, ensuring highly accurate and context-aware retrieval of legal documents.
+- **FAISS**: Uses vector-based retrieval for scalability and fast querying of large datasets.
+
+## Summarization
+
+- **BART**: Processes retrieved documents to produce concise, coherent summaries, aiding in quick comprehension of legal texts.
+
+--- 
+
+## Evaluation Metrics
+
+The system is evaluated using:
+
+- **Precision@k**: Measures relevant documents retrieved in top-\(k\) results.
+- **Recall@k**: Proportion of all relevant documents retrieved.
+- **F1-score@k**: Harmonic mean of precision and recall.
+- **nDCG@k**: Evaluates ranking quality.
+- **MAP**: Reflects overall retrieval performance.
+
+---
+
 ## Results
 
 - **ColBERT** consistently outperformed **FAISS** in recall, F1-score, and ranking quality (nDCG@k).
@@ -104,10 +139,11 @@ Framework-Insight-Retrieval-and-Summarization/
 
 ---
 
-# Usage
+## Limitations 
 
-1. To run ColBERT:
-   `colbert.ipynb`
-2. To run FAISS
-   `faiss.ipynb`
+1. **Summarization Constraints**: BART’s input window may truncate lengthy documents, omitting critical details.
+2. **Scalability Issues**: FAISS requires re-indexing for new data, while ColBERT’s token-level matching is computationally expensive.
+3. **Domain-Specific Nuances**: Pre-trained models like DistilBERT and ColBERT may not fully capture legal terminology.
+4. **Metadata Quality**: The system heavily relies on complete and consistent metadata.
+
 
